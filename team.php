@@ -29,9 +29,20 @@ class Team {
         elseif ($Parm1 == $Parm2) {
              $this->totalPoints += 1;
         } else{
-            
+
         }
         
+    }
+
+    public function getTotalPoints()
+    {
+        return $this->totalPoints;
+
+    }
+    
+    public function getGoalAverage()
+    {
+        return $this->totalGoals/$this->totalGames;
     }
 
   
